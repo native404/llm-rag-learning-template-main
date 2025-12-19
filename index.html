@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>適応的学習支援AI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", "Hiragino Sans", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+      }
+
+      h1 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        color: #666;
+        margin-bottom: 25px;
+      }
+
+      .input-section {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+      }
+
+      #question-input {
+        flex: 1;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      #question-input:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      .btn {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+      }
+
+      .answer-box {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #667eea;
+        margin-bottom: 20px;
+      }
+
+      .answer-box h3 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      .answer-box p {
+        line-height: 1.8;
+      }
+
+      .support-box {
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .support-box.prerequisites {
+        background: #fff3e0;
+        border-left: 4px solid #ff9800;
+      }
+
+      .support-box.related {
+        background: #e3f2fd;
+        border-left: 4px solid #2196f3;
+      }
+
+      .support-box.next-steps {
+        background: #e8f5e9;
+        border-left: 4px solid #4caf50;
+      }
+
+      .concept-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .tag {
+        background: #2196f3;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 14px;
+      }
+
+      .verification-section {
+        margin-top: 25px;
+        padding: 20px;
+        background: #fafafa;
+        border-radius: 10px;
+      }
+
+      .verification-prompt {
+        margin-bottom: 15px;
+        color: #666;
+      }
+
+      .verification-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .verify-btn {
+        padding: 10px 20px;
+        border: 2px solid #667eea;
+        border-radius: 8px;
+        background: white;
+        color: #667eea;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .verify-btn:hover {
+        background: #667eea;
+        color: white;
+      }
+
+      .verification-result {
+        margin-top: 20px;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+
+      .source-item {
+        padding: 10px;
+        margin: 10px 0;
+        background: #f5f5f5;
+        border-radius: 5px;
+      }
+
+      .source-item a {
+        color: #667eea;
+      }
+
+      .evaluation {
+        margin-top: 15px;
+        padding: 15px;
+        background: #e8f5e9;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎓 適応的学習支援AI</h1>
+      <p class="subtitle">あなたの状況に合わせてサポートします</p>
+
+      <div class="level-selection" style="margin-bottom: 20px;">
+        <label for="learner-level" style="font-weight: bold; color: #333;">学習レベル：</label>
+        <select id="learner-level" style="padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd; font-size: 16px;">
+          <option value="beginner">初級</option>
+          <option value="intermediate">中級</option>
+          <option value="advanced">上級</option>
+        </select>
+      </div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="question-input"
+          placeholder="質問を入力してください"
+          disabled
+        />
+        <button
+          class="btn btn-primary"
+          id="ask-btn"
+          onclick="askQuestion()"
+          disabled
+        >
+          質問する
+        </button>
+      </div>
+
+      <div id="result-container"></div>
+    </div>
+
+    <!-- 依存スクリプト -->
+    <script src="js/config.js"></script>
+    <script src="js/secrets.js"></script>
+    <!-- APIキー（GitHubにはプッシュしない） -->
+    <script src="js/llm-client.js"></script>
+    <script src="js/vector-search.js"></script>
+    <script src="js/ontology.js"></script>
+    <script src="js/concept-extractor.js"></script>
+    <script src="js/hybrid-search.js"></script>
+    <script src="js/learning-support.js"></script>
+    <script src="js/semantic-rag.js"></script>
+    <script src="js/web-search-client.js"></script>
+    <script src="js/fact-checker.js"></script>
+    <script src="js/my-app.js"></script>
+  </body>
+</html>

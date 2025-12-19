@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM学習システム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 LLM学習システム</h1>
+            <p class="subtitle">適応的学習支援システムの開発</p>
+            <nav>
+                <a href="japanese-quiz.html" class="button">国語単語クイズ</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="chat-section">
+                <h2>💬 チャットインターフェース</h2>
+                <div id="chat-messages" class="chat-messages">
+                    <div class="system-message">
+                        システムが起動しました。メッセージを入力してください。
+                    </div>
+                </div>
+                
+                <div class="input-area">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        placeholder="質問を入力してください..."
+                        onkeypress="handleKeyPress(event)"
+                    >
+                    <!-- 画像選択ボタンと解析ボタンを送信ボタンの左に配置 -->
+                    <label for="image-input" class="upload-label button">画像を選択</label>
+                    <input type="file" id="image-input" accept="image/*" style="display:none" onchange="handleImageUpload(event)">
+                    <button onclick="sendMessage()">送信</button>
+                </div>
+                
+
+            </section>
+            
+            <aside class="info-section">
+                <h3>📊 システム情報</h3>
+                <div id="system-info">
+                    <p>学生ID: <span id="student-id">未設定</span></p>
+                    <p>リクエスト数: <span id="request-count">0</span></p>
+                </div>
+            </aside>
+        </main>
+    </div>
+    
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="js/config.js"></script>
+    <script src="js/secrets.js"></script>
+    <script src="js/llm-client.js"></script>
+    <script src="js/web-search-client.js"></script>
+    <script src="js/vector-search.js"></script>
+    <script src="js/rag-system.js"></script>
+    <script src="js/app2.js"></script>
+</body>
+</html>

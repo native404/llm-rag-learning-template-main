@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国語単語クイズ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .quiz-section {
+            text-align: center;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            width: 100%;
+        }
+        #question-word {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        #answer-reading {
+            font-size: 2em;
+            color: #16a085;
+            margin-bottom: 30px;
+            display: none; /* Initially hidden */
+        }
+        .quiz-buttons button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 国語単語クイズ</h1>
+            <p class="subtitle">日本の単語の読みを学びましょう</p>
+        </header>
+        
+        <main>
+            <section class="quiz-section">
+                <div class="mode-selector" style="margin-bottom: 20px;">
+                    <label><input type="radio" name="quiz-mode" value="normal" checked> 通常モード</label>
+                    <label style="margin-left: 20px;"><input type="radio" name="quiz-mode" value="review"> 復習モード</label>
+                </div>
+                <div id="question-word">
+                    読み込み中...
+                </div>
+                <div class="answer-input-section" style="margin-bottom: 20px;">
+                    <input type="text" id="answer-input" placeholder="読みを入力してください" autocomplete="off" style="font-size: 1.2em; padding: 10px; width: 250px; text-align: center;">
+                </div>
+                <div id="feedback" style="margin-bottom: 20px; font-size: 1.2em;">
+                    <!-- Feedback will be shown here -->
+                </div>
+                <div class="quiz-buttons">
+                    <button id="submit-answer-btn">回答する</button>
+                    <button id="next-question-btn">次の問題</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="js/japanese-quiz.js"></script>
+</body>
+</html>

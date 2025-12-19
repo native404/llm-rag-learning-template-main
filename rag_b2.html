@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>B2リーグ（東地区） 学習RAG</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body {
+                font-family: "Segoe UI", "Hiragino Sans", sans-serif;
+                background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
+                min-height: 100vh;
+                padding: 20px;
+                color: #fff;
+            }
+            .container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+            .main-panel { background: #fff; color: #111; border-radius: 12px; padding: 26px; box-shadow: 0 20px 50px rgba(2,6,23,0.6); }
+            .sidebar { display:flex; flex-direction: column; gap: 14px; }
+            .sidebar-card { background: #fff; border-radius: 10px; padding: 16px; color: #111; box-shadow: 0 8px 24px rgba(2,6,23,0.35); }
+            h1 { color: #0ea5e9; margin-bottom: 8px; }
+            .subtitle { color: #666; margin-bottom: 18px; }
+            .input-section { display:flex; gap: 10px; margin-bottom: 18px; }
+            #question-input { flex:1; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 15px; }
+            #question-input:focus { outline: none; border-color: #0ea5e9; }
+            .btn { padding: 12px 18px; border: none; border-radius: 8px; cursor: pointer; }
+            .btn-primary { background: linear-gradient(90deg,#0ea5e9,#06b6d4); color: white; font-weight: 600; }
+            .btn-secondary { background:#f3f4f6; color:#111; }
+            .status { padding: 12px; border-radius: 8px; margin-bottom: 12px; display:none; }
+            .status.loading { display:block; background: #eef2ff; color: #1e3a8a; }
+            .status.success { display:block; background:#ecfdf5; color:#065f46; }
+            .status.error { display:block; background:#fff1f2; color:#7f1d1d; }
+            .learning-answer { background:#f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #0ea5e9; }
+            .source-doc { margin-top:10px; padding:12px; background:white; border-radius:6px; border-left: 4px solid #3b82f6; }
+            .topic-tag { display:inline-block; padding:6px 12px; background:#e6f7ff; color:#0369a1; border-radius:14px; margin:4px; cursor:pointer; }
+            @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+            .bg-controls { display:flex; gap:8px; align-items:center; margin-bottom:12px; }
+            .bg-preview-img { max-width:120px; max-height:60px; border-radius:6px; object-fit:cover; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-panel">
+                <h1>🏀 B2リーグ（東地区） 学習RAG</h1>
+                <p class="subtitle">チーム情報やルール、選手の特徴などを検索して学べます。</p>
+
+                <div class="status" id="status"></div>
+
+                <div class="bg-controls">
+                    <input type="file" id="bg-input" accept="image/*" />
+                    <button class="btn btn-secondary" id="bg-clear">背景クリア</button>
+                    <div id="bg-preview" style="display:none"><img id="bg-preview-img" class="bg-preview-img"></div>
+                </div>
+
+                <div class="input-section">
+                    <input id="question-input" placeholder="例: 青森ワッツの特徴は？" />
+                    <button id="ask-btn" class="btn btn-primary" onclick="askSemantic()">🔍 質問</button>
+                    <button class="btn btn-secondary" onclick="compareSearchModes()">⚖️ 比較</button>
+                </div>
+
+                <div id="semantic-result"></div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-card">
+                    <div style="font-weight:700; margin-bottom:8px;">📊 学習進捗</div>
+                    <div id="progress-display"><p style="color:#666;">質問を始めると表示されます</p></div>
+                </div>
+                <div class="sidebar-card">
+                    <div style="font-weight:700; margin-bottom:8px;">💡 推奨トピック</div>
+                    <div id="recommended-topics">
+                        <span class="topic-tag" onclick="askAbout('青森ワッツ')">青森ワッツ</span>
+                        <span class="topic-tag" onclick="askAbout('岩手ビッグブルズ')">岩手ビッグブルズ</span>
+                        <span class="topic-tag" onclick="askAbout('秋田ノーザンハピネッツ')">秋田ノーザンハピネッツ</span>
+                        <span class="topic-tag" onclick="askAbout('試合のルール')">試合のルール</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bg-uploader.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/llm-client.js"></script>
+        <script src="js/vector-search.js"></script>
+        <script src="js/ontology.js"></script>
+        <script src="js/concept-extractor.js"></script>
+        <script src="js/learning-support.js"></script>
+        <script src="js/hybrid-search.js"></script>
+        <script src="js/semantic-rag.js"></script>
+
+        <script>
+      let semanticRAG;
+      let currentLevel = 'beginner';
+      let conceptProgress = new Map();
+
+      function generateDocumentsFromOntology(ontologyData) {
+        const docs = [];
+        const concepts = ontologyData.concepts || {};
+
+        for (const [conceptId, conceptData] of Object.entries(concepts)) {
+          const explanation = conceptData.explanations?.[currentLevel] || 
+                             conceptData.explanations?.intermediate ||
+                             conceptData.description || '';
+          docs.push({
+            id: conceptId,
+            title: conceptData.label || conceptId,
+            content: explanation,
+            subject: conceptData.level || 'intermediate',
+            level: conceptData.level === 'beginner' ? '初級' : 
+                   conceptData.level === 'intermediate' ? '中級' : '上級'
+          });
+        }
+
+        return docs;
+      }            function showStatus(message, type = 'loading') {
+                const status = document.getElementById('status');
+                status.textContent = message;
+                status.className = 'status ' + type;
+            }
+
+      document.addEventListener('DOMContentLoaded', async () => {
+        try {
+          showStatus('🚀 システムを初期化中...', 'loading');
+
+          const ontologyRes = await fetch('data/B2-east.json');
+          const ontologyData = await ontologyRes.json();
+
+          // オントロジーから動的にドキュメントを生成
+          const documents = generateDocumentsFromOntology(ontologyData);
+
+          semanticRAG = new SemanticRAGSystem();
+          await semanticRAG.initialize(documents, ontologyData);                    document.getElementById('question-input').disabled = false;
+                    document.getElementById('ask-btn').disabled = false;
+
+                    showStatus('✅ 準備完了！質問を入力してください', 'success');
+                    setTimeout(() => { document.getElementById('status').style.display = 'none'; }, 2500);
+                } catch (err) {
+                    console.error('初期化エラー:', err);
+                    showStatus('❌ 初期化エラー: ' + (err.message || err), 'error');
+                }
+            });
+
+            async function askSemantic() {
+                const input = document.getElementById('question-input');
+                const q = input.value.trim();
+                if (!q) { alert('質問を入力してください'); return; }
+                try {
+                    showStatus('🔍 検索中...', 'loading');
+                    document.getElementById('ask-btn').disabled = true;
+
+                    const result = await semanticRAG.semanticQuery(q, { retrieveCount: 5, learnerLevel: currentLevel });
+                    semanticRAG.displayRAGResult(result);
+                    updateProgress(result);
+                    document.getElementById('status').style.display = 'none';
+                } catch (err) {
+                    console.error('検索エラー:', err);
+                    showStatus('❌ 検索エラー: ' + (err.message || err), 'error');
+                } finally {
+                    document.getElementById('ask-btn').disabled = false;
+                }
+            }
+
+            function askAbout(topic) {
+                document.getElementById('question-input').value = `${topic}とは？`;
+                askSemantic();
+            }
+
+            function updateProgress(result) {
+                if (!result?.expandedQuery?.concepts) return;
+                for (const c of result.expandedQuery.concepts) {
+                    const cur = conceptProgress.get(c) || 0;
+                    conceptProgress.set(c, Math.min(100, cur + 20));
+                }
+                displayProgress();
+            }
+
+            function displayProgress() {
+                const container = document.getElementById('progress-display');
+                if (conceptProgress.size === 0) { container.innerHTML = '<p style="color:#666;">質問を始めると表示されます</p>'; return; }
+                let html = '';
+                for (const [concept, progress] of conceptProgress) {
+                    const label = semanticRAG.ontology.getConcept(concept)?.label || concept;
+                    html += `<div style="margin-bottom:8px;"><div style="font-size:0.95em;color:#333;margin-bottom:6px">${label}</div><div style="background:#e6eef8;border-radius:6px;overflow:hidden;height:10px"><div style="height:100%;background:linear-gradient(90deg,#0ea5e9,#06b6d4);width:${progress}%"></div></div></div>`;
+                }
+                container.innerHTML = html;
+            }
+
+            async function compareSearchModes() {
+                const question = document.getElementById('question-input').value.trim();
+                if (!question) { alert('まず質問を入力してください'); return; }
+                try {
+                    showStatus('⚖️ 検索モードを比較中...', 'loading');
+                    const [vectorResults, bm25Results, hybridResults] = await Promise.all([
+                        semanticRAG.searchEngine.vectorSearchOnly(question, 3),
+                        Promise.resolve(semanticRAG.searchEngine.bm25SearchOnly(question, 3)),
+                        semanticRAG.searchEngine.search(question, 3)
+                    ]);
+
+                    document.getElementById('semantic-result').innerHTML = `
+                        <div class="learning-answer">
+                            <h3>⚖️ 検索モード比較: "${question}"</h3>
+                            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px;">
+                                <div style="background:#eef7ff;padding:12px;border-radius:8px;">
+                                    <h4 style="color:#0369a1;">ベクトル検索</h4>
+                                    ${vectorResults.map((r,i)=>`<p style="font-size:0.85em;">${i+1}. ${r.document.text.substring(0,80)}...<br><small>${(r.similarity*100).toFixed(1)}%</small></p>`).join('')}
+                                </div>
+                                <div style="background:#fff7e6;padding:12px;border-radius:8px;">
+                                    <h4 style="color:#b45309;">BM25検索</h4>
+                                    ${bm25Results.map((r,i)=>`<p style="font-size:0.85em;">${i+1}. ${r.document.text.substring(0,80)}...<br><small>${(r.similarity*100).toFixed(1)}%</small></p>`).join('')}
+                                </div>
+                                <div style="background:#eefaf1;padding:12px;border-radius:8px;">
+                                    <h4 style="color:#166534;">ハイブリッド</h4>
+                                    ${hybridResults.map((r,i)=>`<p style="font-size:0.85em;">${i+1}. ${r.document.text.substring(0,80)}...<br><small>${(r.hybridScore*100).toFixed(1)}%</small></p>`).join('')}
+                                </div>
+                            </div>
+                        </div>`;
+                    document.getElementById('status').style.display = 'none';
+                } catch (err) {
+                    console.error('比較エラー:', err);
+                    showStatus('❌ 比較中にエラーが発生しました', 'error');
+                }
+            }
+
+            document.getElementById('question-input').addEventListener('keypress', (e)=>{
+                if (e.key === 'Enter' && !document.getElementById('ask-btn').disabled) askSemantic();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "documents": [
+    {
+      "id": "holiday001",
+      "title": "元日",
+      "content": "1月1日。年のはじめを祝う日。新しい年の到来を祝い、希望を新たにする国民の祝日。",
+      "category": "national_holiday",
+      "date": "1月1日",
+      "origin": "年始の慣習",
+      "established": 1948,
+      "relatedHolidays": ["成人の日"],
+      "activities": ["初詣", "年始の挨拶"]
+    },
+    {
+      "id": "holiday002",
+      "title": "成人の日",
+      "content": "1月第2月曜日。おとなになったことを自覚し、自ら生き抜こうとする青年を祝いはげます日。",
+      "category": "national_holiday",
+      "date": "1月第2月曜日",
+      "origin": "成人式",
+      "established": 1948,
+      "relatedHolidays": ["元日"],
+      "activities": ["成人式", "家族での祝い"]
+    },
+    {
+      "id": "holiday003",
+      "title": "建国記念の日",
+      "content": "2月11日。日本書紀で神武天皇が即位したとされる日。建国をしのび、国を愛する心を養う日。",
+      "category": "national_holiday",
+      "date": "2月11日",
+      "origin": "神武天皇即位",
+      "established": 1966,
+      "relatedHolidays": ["天皇誕生日", "文化の日"],
+      "activities": ["歴史スポット巡り", "日本史の学習"]
+    },
+    {
+      "id": "holiday004",
+      "title": "天皇誕生日",
+      "content": "2月23日。現在の天皇の誕生日を祝う日。国民が天皇の誕生日を祝意をもって祝う。",
+      "category": "national_holiday",
+      "date": "2月23日",
+      "origin": "天皇誕生日",
+      "established": 1948,
+      "relatedHolidays": ["建国記念の日"],
+      "activities": ["一般参賀（実施時）", "祝賀行事の視聴"]
+    },
+    {
+      "id": "holiday005",
+      "title": "春分の日",
+      "content": "3月20日頃（年により変動）。自然をたたえ、生物をいつくしむ日。昼夜の長さがほぼ等しくなる。",
+      "category": "national_holiday",
+      "date": "3月20日頃",
+      "origin": "二十四節気",
+      "relatedHolidays": ["秋分の日"],
+      "activities": ["お墓参り", "自然観察"]
+    },
+    {
+      "id": "holiday006",
+      "title": "昭和の日",
+      "content": "4月29日。昭和の時代を顧み、国の将来に思いをいたす日。",
+      "category": "national_holiday",
+      "date": "4月29日",
+      "origin": "昭和天皇誕生日",
+      "established": 2007,
+      "relatedHolidays": ["憲法記念日", "みどりの日"],
+      "activities": ["昭和史の学習", "記念展示鑑賞"]
+    },
+    {
+      "id": "holiday007",
+      "title": "憲法記念日",
+      "content": "5月3日。日本国憲法の施行を記念し、国の成長を期する日。",
+      "category": "national_holiday",
+      "date": "5月3日",
+      "origin": "日本国憲法施行",
+      "established": 1948,
+      "relatedHolidays": ["昭和の日", "みどりの日"],
+      "activities": ["憲法について考える", "講演視聴"]
+    },
+    {
+      "id": "holiday008",
+      "title": "みどりの日",
+      "content": "5月4日。自然に親しみ、その恩恵に感謝し、豊かな心をはぐくむ日。",
+      "category": "national_holiday",
+      "date": "5月4日",
+      "origin": "自然への感謝",
+      "established": 2007,
+      "relatedHolidays": ["昭和の日", "こどもの日"],
+      "activities": ["公園散策", "植樹"]
+    },
+    {
+      "id": "holiday009",
+      "title": "こどもの日",
+      "content": "5月5日。こどもの人格を重んじ、こどもの幸福をはかるとともに、母に感謝する日。",
+      "category": "national_holiday",
+      "date": "5月5日",
+      "origin": "端午の節句",
+      "established": 1948,
+      "relatedHolidays": ["みどりの日"],
+      "activities": ["こいのぼり", "柏餅"]
+    },
+    {
+      "id": "holiday010",
+      "title": "海の日",
+      "content": "7月第3月曜日。海の恩恵に感謝するとともに、海洋国日本の繁栄を願う日。",
+      "category": "national_holiday",
+      "date": "7月第3月曜日",
+      "origin": "海への感謝",
+      "established": 1996,
+      "relatedHolidays": ["山の日"],
+      "activities": ["海辺のレジャー", "海洋学習"]
+    },
+    {
+      "id": "holiday011",
+      "title": "山の日",
+      "content": "8月11日。山に親しむ機会を得て、山の恩恵に感謝する日。",
+      "category": "national_holiday",
+      "date": "8月11日",
+      "origin": "山への感謝",
+      "established": 2016,
+      "relatedHolidays": ["海の日"],
+      "activities": ["登山", "自然散策"]
+    },
+    {
+      "id": "holiday012",
+      "title": "敬老の日",
+      "content": "9月第3月曜日。多年にわたり社会につくしてきた老人を敬愛し、長寿を祝う日。",
+      "category": "national_holiday",
+      "date": "9月第3月曜日",
+      "origin": "敬老の精神",
+      "established": 1966,
+      "relatedHolidays": ["秋分の日"],
+      "activities": ["祖父母への感謝", "地域行事参加"]
+    },
+    {
+      "id": "holiday013",
+      "title": "秋分の日",
+      "content": "9月23日頃（年により変動）。祖先をうやまい、亡くなった人々をしのぶ日。",
+      "category": "national_holiday",
+      "date": "9月23日頃",
+      "origin": "二十四節気",
+      "relatedHolidays": ["春分の日"],
+      "activities": ["お墓参り", "彼岸行事"]
+    },
+    {
+      "id": "holiday014",
+      "title": "スポーツの日",
+      "content": "10月第2月曜日。スポーツを楽しみ、他者を尊重する精神を培うとともに、健康で活力ある社会の実現を願う日。",
+      "category": "national_holiday",
+      "date": "10月第2月曜日",
+      "origin": "東京オリンピック（1964）",
+      "established": 1966,
+      "relatedHolidays": ["文化の日"],
+      "activities": ["運動会", "スポーツ観戦"]
+    },
+    {
+      "id": "holiday015",
+      "title": "文化の日",
+      "content": "11月3日。自由と平和を愛し、文化をすすめる日。",
+      "category": "national_holiday",
+      "date": "11月3日",
+      "origin": "日本国憲法公布",
+      "established": 1948,
+      "relatedHolidays": ["建国記念の日"],
+      "activities": ["文化祭", "美術館巡り"]
+    },
+    {
+      "id": "holiday016",
+      "title": "勤労感謝の日",
+      "content": "11月23日。勤労をたっとび、生産を祝い、国民が互いに感謝しあう日。",
+      "category": "national_holiday",
+      "date": "11月23日",
+      "origin": "新嘗祭",
+      "established": 1948,
+      "relatedHolidays": ["文化の日"],
+      "activities": ["感謝の手紙", "家族団らん"]
+    }
+  ]
+}

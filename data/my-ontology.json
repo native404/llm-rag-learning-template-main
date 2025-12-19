@@ -1,0 +1,140 @@
+{
+  "concepts": {
+    "gantan": {
+      "label": "元日",
+      "description": "1月1日・新しい年の始まりを祝う日",
+      "category": "national",
+      "season": "winter",
+      "relatedConcepts": ["seijin-no-hi"],
+      "themes": ["年始", "祝い"]
+    },
+    "seijin-no-hi": {
+      "label": "成人の日",
+      "description": "1月第2月曜日・成人を祝う日",
+      "category": "life-event",
+      "season": "winter",
+      "relatedConcepts": ["gantan"],
+      "themes": ["成人", "成長"]
+    },
+    "kenkoku": {
+      "label": "建国記念の日",
+      "description": "2月11日・建国をしのぶ日",
+      "category": "national",
+      "season": "winter",
+      "relatedConcepts": ["tennou-tanjoubi", "bunka-no-hi"],
+      "themes": ["歴史", "日本の成り立ち"]
+    },
+    "tennou-tanjoubi": {
+      "label": "天皇誕生日",
+      "description": "2月23日・天皇の誕生日を祝う",
+      "category": "national",
+      "season": "winter",
+      "relatedConcepts": ["kenkoku", "bunka-no-hi"],
+      "themes": ["天皇", "祝賀"]
+    },
+    "shunbun": {
+      "label": "春分の日",
+      "description": "3月20日頃・自然をたたえる",
+      "category": "nature",
+      "season": "spring",
+      "relatedConcepts": ["shubun", "ohigan"],
+      "themes": ["自然", "お彼岸"]
+    },
+    "showa": {
+      "label": "昭和の日",
+      "description": "4月29日・昭和の時代を顧みる日",
+      "category": "historical",
+      "season": "spring",
+      "relatedConcepts": ["kenpou-kinenbi", "midori-no-hi"],
+      "themes": ["昭和", "近代史"]
+    },
+    "kenpou-kinenbi": {
+      "label": "憲法記念日",
+      "description": "5月3日・日本国憲法を記念する日",
+      "category": "national",
+      "season": "spring",
+      "relatedConcepts": ["showa", "bunka-no-hi"],
+      "themes": ["憲法", "民主主義"]
+    },
+    "midori-no-hi": {
+      "label": "みどりの日",
+      "description": "5月4日・自然に親しむ日",
+      "category": "nature",
+      "season": "spring",
+      "relatedConcepts": ["showa", "kodomo-no-hi"],
+      "themes": ["自然", "環境"]
+    },
+    "kodomo-no-hi": {
+      "label": "こどもの日",
+      "description": "5月5日・こどもの成長を祝う日",
+      "category": "family",
+      "season": "spring",
+      "relatedConcepts": ["midori-no-hi"],
+      "themes": ["こども", "家族"]
+    },
+    "umi-no-hi": {
+      "label": "海の日",
+      "description": "7月第3月曜日・海の恩恵に感謝する日",
+      "category": "nature",
+      "season": "summer",
+      "relatedConcepts": ["yama-no-hi"],
+      "themes": ["海", "日本列島"]
+    },
+    "yama-no-hi": {
+      "label": "山の日",
+      "description": "8月11日・山の恩恵に感謝する日",
+      "category": "nature",
+      "season": "summer",
+      "relatedConcepts": ["umi-no-hi"],
+      "themes": ["山", "自然"]
+    },
+    "keirou-no-hi": {
+      "label": "敬老の日",
+      "description": "9月第3月曜日・高齢者を敬う日",
+      "category": "social",
+      "season": "autumn",
+      "relatedConcepts": ["shubun"],
+      "themes": ["高齢者", "感謝"]
+    },
+    "shubun": {
+      "label": "秋分の日",
+      "description": "9月23日頃・祖先をうやまう",
+      "category": "nature",
+      "season": "autumn",
+      "relatedConcepts": ["shunbun", "ohigan"],
+      "themes": ["祖先", "お彼岸"]
+    },
+    "sports-no-hi": {
+      "label": "スポーツの日",
+      "description": "10月第2月曜日・スポーツに親しむ日",
+      "category": "health",
+      "season": "autumn",
+      "relatedConcepts": ["kenkou"],
+      "themes": ["運動", "健康"]
+    },
+    "bunka-no-hi": {
+      "label": "文化の日",
+      "description": "11月3日・文化をすすめる日",
+      "category": "culture",
+      "season": "autumn",
+      "relatedConcepts": ["kenkoku", "kenpou-kinenbi"],
+      "themes": ["文化", "平和"]
+    },
+    "kinrou-kansha": {
+      "label": "勤労感謝の日",
+      "description": "11月23日・勤労をたっとぶ日",
+      "category": "social",
+      "season": "autumn",
+      "relatedConcepts": ["niiname-sai"],
+      "themes": ["労働", "感謝"]
+    },
+    "ohigan": {
+      "label": "お彼岸",
+      "description": "春分・秋分を中心とした7日間",
+      "category": "tradition",
+      "relatedConcepts": ["shunbun", "shubun"],
+      "themes": ["先祖供養", "仏教"]
+    }
+  },
+  "relations": []
+}

@@ -1,0 +1,1201 @@
+{
+  "documents": [
+    {
+      "id": "kanji_plant_015",
+      "title": "浜木綿",
+      "content": "読み：はまゆう",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_016",
+      "title": "竜胆",
+      "content": "読み：りんどう",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_017",
+      "title": "虎杖",
+      "content": "読み：いたどり",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_018",
+      "title": "桔梗",
+      "content": "読み：ききょう",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_019",
+      "title": "牡丹",
+      "content": "読み：ぼたん",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_020",
+      "title": "忘れ草",
+      "content": "読み：わすれぐさ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_021",
+      "title": "菫",
+      "content": "読み：すみれ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_022",
+      "title": "撫子",
+      "content": "読み：なでしこ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_023",
+      "title": "薊",
+      "content": "読み：あざみ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_024",
+      "title": "向日葵",
+      "content": "読み：ひまわり",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_025",
+      "title": "菖蒲",
+      "content": "読み：しょうぶ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_026",
+      "title": "木賊",
+      "content": "読み：とくさ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_027",
+      "title": "薄",
+      "content": "読み：すすき",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_028",
+      "title": "杏",
+      "content": "読み：あんず",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_029",
+      "title": "木槿",
+      "content": "読み：むくげ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_030",
+      "title": "辛夷",
+      "content": "読み：こぶし",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_031",
+      "title": "槐",
+      "content": "読み：えんじゅ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_032",
+      "title": "枳殻",
+      "content": "読み：からたち",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_033",
+      "title": "木瓜",
+      "content": "読み：ぼけ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_034",
+      "title": "通草",
+      "content": "読み：あけび",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_035",
+      "title": "柊",
+      "content": "読み：ひいらぎ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_036",
+      "title": "団栗",
+      "content": "読み：どんぐり",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_plant_037",
+      "title": "篠懸",
+      "content": "読み：すずかけ",
+      "subject": "漢字（植物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_013",
+      "title": "雪崩",
+      "content": "読み：なだれ",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_014",
+      "title": "吹雪",
+      "content": "読み：ふぶき",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_015",
+      "title": "黎明",
+      "content": "読み：れいめい",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_016",
+      "title": "稲妻",
+      "content": "読み：いなずま",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_017",
+      "title": "夕立",
+      "content": "読み：ゆうだち",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_018",
+      "title": "氷雨",
+      "content": "読み：ひさめ",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_019",
+      "title": "日和",
+      "content": "読み：ひより",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_weather_020",
+      "title": "木枯らし",
+      "content": "読み：こがらし",
+      "subject": "漢字（天気・自然）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_013",
+      "title": "鵲",
+      "content": "読み：かささぎ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_014",
+      "title": "金糸雀",
+      "content": "読み：かなりや",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_015",
+      "title": "鶯",
+      "content": "読み：うぐいす",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_016",
+      "title": "四十雀",
+      "content": "読み：しじゅうから",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_017",
+      "title": "鶉",
+      "content": "読み：うずら",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_018",
+      "title": "鷺",
+      "content": "読み：さぎ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_019",
+      "title": "鴫",
+      "content": "読み：しぎ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_020",
+      "title": "鶸",
+      "content": "読み：ひわ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_021",
+      "title": "軍鶏",
+      "content": "読み：しゃも",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_022",
+      "title": "鶫",
+      "content": "読み：つぐみ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_023",
+      "title": "蝟",
+      "content": "読み：はりねずみ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_024",
+      "title": "蝙蝠",
+      "content": "読み：こうもり",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_025",
+      "title": "鼬",
+      "content": "読み：いたち",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_026",
+      "title": "栗鼠",
+      "content": "読み：りす",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_027",
+      "title": "溝鼠",
+      "content": "読み：どぶねずみ",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_animal_028",
+      "title": "貂",
+      "content": "読み：てん",
+      "subject": "漢字（鳥・動物）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_009",
+      "title": "鰯",
+      "content": "読み：いわし",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_010",
+      "title": "鮪",
+      "content": "読み：まぐろ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_011",
+      "title": "鰹",
+      "content": "読み：かつお",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_012",
+      "title": "鮑",
+      "content": "読み：あわび",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_013",
+      "title": "鮠",
+      "content": "読み：はや",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_014",
+      "title": "鰤",
+      "content": "読み：ぶり",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_015",
+      "title": "鯖",
+      "content": "読み：さば",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_016",
+      "title": "鱈",
+      "content": "読み：たら",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_017",
+      "title": "鰊",
+      "content": "読み：にしん",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_018",
+      "title": "沙魚",
+      "content": "読み：はぜ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_019",
+      "title": "鱸",
+      "content": "読み：すずき",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_020",
+      "title": "細魚",
+      "content": "読み：さより",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_021",
+      "title": "烏賊",
+      "content": "読み：いか",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_022",
+      "title": "海苔",
+      "content": "読み：のり",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_023",
+      "title": "蛤",
+      "content": "読み：はまぐり",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_024",
+      "title": "河豚",
+      "content": "読み：ふぐ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_025",
+      "title": "蟹",
+      "content": "読み：かに",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_026",
+      "title": "浅蜊",
+      "content": "読み：あさり",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_027",
+      "title": "平目",
+      "content": "読み：ひらめ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_028",
+      "title": "海老",
+      "content": "読み：えび",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_029",
+      "title": "牡蠣",
+      "content": "読み：かき",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_030",
+      "title": "若布",
+      "content": "読み：わかめ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_031",
+      "title": "鰡子",
+      "content": "読み：からすみ",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_032",
+      "title": "海豚",
+      "content": "読み：いるか",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_sea_033",
+      "title": "膃肭臍",
+      "content": "読み：おっとせい",
+      "subject": "漢字（魚・海）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_005",
+      "title": "天衣無縫",
+      "content": "読み：てんいむほう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_006",
+      "title": "玉石混淆",
+      "content": "読み：ぎょくせきこんこう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_007",
+      "title": "南船北馬",
+      "content": "読み：なんせんほくば",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_008",
+      "title": "夏炉冬扇",
+      "content": "読み：かろとうせん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_009",
+      "title": "自暴自棄",
+      "content": "読み：じぼうじき",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_010",
+      "title": "明鏡止水",
+      "content": "読み：めいきょうしすい",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_011",
+      "title": "温故知新",
+      "content": "読み：おんこちしん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_012",
+      "title": "四海兄弟",
+      "content": "読み：しかいけいてい",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_013",
+      "title": "疑心暗鬼",
+      "content": "読み：ぎしんあんき",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_014",
+      "title": "流言飛語",
+      "content": "読み：りゅうげんひご",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_015",
+      "title": "小心翼々",
+      "content": "読み：しょうしんよくよく",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_016",
+      "title": "君子豹変",
+      "content": "読み：くんしひょうへん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_017",
+      "title": "呉越同舟",
+      "content": "読み：ごえつどうしゅう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_018",
+      "title": "信賞必罰",
+      "content": "読み：しんしょうひつばつ",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_019",
+      "title": "臥薪嘗胆",
+      "content": "読み：がしんしょうたん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_020",
+      "title": "合従連衡",
+      "content": "読み：がっしょうれんこう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_021",
+      "title": "傍若無人",
+      "content": "読み：ぼうじゃくぶじん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_022",
+      "title": "暗中模索",
+      "content": "読み：あんちゅうもさく",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_023",
+      "title": "太公望",
+      "content": "読み：たいこうぼう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_024",
+      "title": "一挙両得",
+      "content": "読み：いっきょりょうとく",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_025",
+      "title": "曲学阿世",
+      "content": "読み：きょくがくあせい",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_026",
+      "title": "鶏鳴狗盗",
+      "content": "読み：けいめいくとう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_027",
+      "title": "首鼠両端",
+      "content": "読み：しゅそりょうたん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_028",
+      "title": "緑林",
+      "content": "読み：りょくりん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_029",
+      "title": "一網打尽",
+      "content": "読み：いちもうだじん",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_idiom_030",
+      "title": "伴食宰相",
+      "content": "読み：ばんしょくさいしょう",
+      "subject": "漢字（四字熟語）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_041",
+      "title": "生半可",
+      "content": "読み：なまはんか",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_042",
+      "title": "素足",
+      "content": "読み：すあし",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_043",
+      "title": "仮病",
+      "content": "読み：けびょう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_044",
+      "title": "漸進",
+      "content": "読み：ぜんしん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_045",
+      "title": "巨細",
+      "content": "読み：きょさい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_046",
+      "title": "外道",
+      "content": "読み：げどう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_047",
+      "title": "反古",
+      "content": "読み：ほご",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_048",
+      "title": "虞",
+      "content": "読み：おそれ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_049",
+      "title": "肌理",
+      "content": "読み：きめ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_050",
+      "title": "号泣",
+      "content": "読み：ごうきゅう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_051",
+      "title": "年端",
+      "content": "読み：としは",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_052",
+      "title": "繁盛",
+      "content": "読み：はんじょう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_053",
+      "title": "明晰",
+      "content": "読み：めいせき",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_054",
+      "title": "懸念",
+      "content": "読み：けねん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_055",
+      "title": "無精",
+      "content": "読み：ぶしょう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_056",
+      "title": "疾病",
+      "content": "読み：しっぺい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_057",
+      "title": "呟く",
+      "content": "読み：つぶやく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_058",
+      "title": "胡散",
+      "content": "読み：うさん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_059",
+      "title": "短冊",
+      "content": "読み：たんざく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_060",
+      "title": "烙印",
+      "content": "読み：らくいん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_061",
+      "title": "客死",
+      "content": "読み：きゃくし",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_062",
+      "title": "象形",
+      "content": "読み：しょうけい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_063",
+      "title": "世論",
+      "content": "読み：せろん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_064",
+      "title": "蘇る",
+      "content": "読み：よみがえる",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_065",
+      "title": "軽重",
+      "content": "読み：けいちょう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_066",
+      "title": "円滑",
+      "content": "読み：えんかつ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_067",
+      "title": "精霊",
+      "content": "読み：せいれい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_068",
+      "title": "閑人",
+      "content": "読み：ひまじん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_069",
+      "title": "手綱",
+      "content": "読み：たづな",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_070",
+      "title": "貶める",
+      "content": "読み：おとしめる",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_071",
+      "title": "開眼",
+      "content": "読み：かいげん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_072",
+      "title": "解毒",
+      "content": "読み：げどく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_073",
+      "title": "端境期",
+      "content": "読み：はざかいき",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_074",
+      "title": "喧伝",
+      "content": "読み：けんでん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_075",
+      "title": "合点",
+      "content": "読み：がってん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_076",
+      "title": "早急",
+      "content": "読み：さっきゅう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_077",
+      "title": "一途",
+      "content": "読み：いちず",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_078",
+      "title": "装丁",
+      "content": "読み：そうてい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_079",
+      "title": "脆い",
+      "content": "読み：もろい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_080",
+      "title": "進捗",
+      "content": "読み：しんちょく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_081",
+      "title": "歪曲",
+      "content": "読み：わいきょく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_082",
+      "title": "入水",
+      "content": "読み：じゅすい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_083",
+      "title": "礎",
+      "content": "読み：いしずえ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_084",
+      "title": "弛緩",
+      "content": "読み：しかん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_085",
+      "title": "一失",
+      "content": "読み：いっしつ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_086",
+      "title": "代替",
+      "content": "読み：だいたい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_087",
+      "title": "座右",
+      "content": "読み：ざゆう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_088",
+      "title": "深紅",
+      "content": "読み：しんく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_089",
+      "title": "無垢",
+      "content": "読み：むく",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_090",
+      "title": "風鈴",
+      "content": "読み：ふうりん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_091",
+      "title": "固唾",
+      "content": "読み：かたず",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_092",
+      "title": "返礼",
+      "content": "読み：へんれい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_093",
+      "title": "洒落",
+      "content": "読み：しゃれ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_094",
+      "title": "犬猿",
+      "content": "読み：けんえん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_095",
+      "title": "健啖",
+      "content": "読み：けんたん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_096",
+      "title": "蛇行",
+      "content": "読み：だこう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_097",
+      "title": "相好",
+      "content": "読み：そうごう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_098",
+      "title": "期する",
+      "content": "読み：きする",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_099",
+      "title": "意匠",
+      "content": "読み：いしょう",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_100",
+      "title": "上気",
+      "content": "読み：じょうき",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_101",
+      "title": "失念",
+      "content": "読み：しつねん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_102",
+      "title": "与る",
+      "content": "読み：あずかる",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_103",
+      "title": "末枯れ",
+      "content": "読み：うらがれ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_104",
+      "title": "依存",
+      "content": "読み：いぞん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_105",
+      "title": "方便",
+      "content": "読み：ほうべん",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_106",
+      "title": "所作",
+      "content": "読み：しょさ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_107",
+      "title": "風情",
+      "content": "読み：ふぜい",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_108",
+      "title": "字面",
+      "content": "読み：じづら",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_109",
+      "title": "古文書",
+      "content": "読み：こもんじょ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_110",
+      "title": "猜疑",
+      "content": "読み：さいぎ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_111",
+      "title": "気骨",
+      "content": "読み：きこつ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_112",
+      "title": "断食",
+      "content": "読み：だんじき",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    },
+    {
+      "id": "kanji_hard_113",
+      "title": "台詞",
+      "content": "読み：せりふ",
+      "subject": "漢字（一般難読）",
+      "level": "難読"
+    }
+  ]
+}
