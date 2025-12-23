@@ -19,54 +19,46 @@ async function sendMessage() {
     const message = input.value.trim();
     let fullMessage = "";
 
-    // 画像もテキストも入力がない場合は何もしない
     if (!message && !uploadedImageBase64) {
         alert('メッセージを入力するか、画像を選択してください');
         return;
     }
 
-    // ユーザーのテキストメッセージ（あれば）を表示
     if (message) {
         addMessage(message, 'user');
         input.value = '';
     }
 
     try {
-        // 処理中であることをユーザーにフィードバック
         addMessage("AIが考えています...", 'system');
 
         if (uploadedImageBase64) {
-            // 画像がある場合
-            const imagePrompt = `
-これはマルチモーダルリクエストです。添付されたBase64形式の画像を解析し、内容を説明してください。
-もしテキストの指示があれば、それにも従ってください。
+            // ★ 画像データはAPIに送らない（最重要）
+            fullMessage = `
+${systemPrompt}
 
----
-画像データ: ${uploadedImageBase64}
----
-テキストの指示: ${message || "（特になし）"}
----
+ユーザーは画像を1枚添付しています。
+現在このシステムでは画像そのものは解析できません。
+
+テキストの指示:
+${message || "（特になし）"}
+
+画像がある前提で、一般的な説明・考察・助言を行ってください。
 `;
-            fullMessage = imagePrompt;
-            uploadedImageBase64 = null; // 一度使ったらリセット
+            uploadedImageBase64 = null; // リセット
         } else {
-            // 画像がない場合（通常のテキストメッセージ）
             fullMessage = `${systemPrompt}\n\nユーザーの質問:\n${message}`;
         }
-        
-        // API呼び出し
+
         const response = await llmClient.chat(fullMessage);
-        
-        // AI応答を表示
         addMessage(response.response, 'ai');
-        
-        // 統計更新
         updateStats();
-        
+
     } catch (error) {
         addMessage('エラーが発生しました: ' + error.message, 'system');
     }
 }
+
 
 // メッセージをチャットに追加 (HTMLコンテンツも許容するように変更)
 function addMessage(content, type, isHTML = false) {
