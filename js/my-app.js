@@ -208,21 +208,28 @@ const hintLevels = {}; // ヒントレベルを管理
 
 // 初期化
 document.addEventListener("DOMContentLoaded", async () => {
-  app = new MyLearningApp();
-  await app.initialize();
-  
-  const askBtn = document.getElementById("ask-btn");
-  const questionInput = document.getElementById("question-input");
+  try {
+    app = new MyLearningApp();
+    await app.initialize();
 
-  askBtn.disabled = false;
-  questionInput.disabled = false;
+    const askBtn = document.getElementById("ask-btn");
+    const questionInput = document.getElementById("question-input");
 
-  questionInput.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      askQuestion();
-    }
-  });
+    askBtn.disabled = false;
+    questionInput.disabled = false;
+
+    questionInput.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        askQuestion();
+      }
+    });
+  } catch (error) {
+    console.error("システム初期化エラー:", error);
+    alert(
+      "システムの初期化に失敗しました。開発者コンソールで詳細を確認してください。"
+    );
+  }
 });
 
 // 質問送信
